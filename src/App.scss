@@ -1,0 +1,218 @@
+.main{
+  max-width: 1400px;
+  margin:0 auto;
+  padding:0 10px;
+  color:#333;
+}
+
+.hd{
+  background:#004D8F;
+  padding:10px 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  &__title{
+    font-size: 1.5rem;
+    color:#FFF;
+  }
+}
+
+.form{
+  &__input{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin-right: 15px;
+    width:30%;
+    &--edit{
+      width:auto;
+    }
+  }
+  &__select{
+    border:none!important;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin-right: 15px;
+  }
+  &__button{
+    padding:4px 20px;
+    font-weight:bold;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition:all ease 0.3s;
+    border:1px solid #ccc;
+    color:#333;
+    &:hover{
+      opacity:0.7;
+    }
+    &--add{
+      color:#FFF;
+      border:1px solid #0075DB;
+      background:#0075DB;
+    }
+    &--delete{
+      color:#FFF;
+      border:1px solid #DB2100;
+      background:#DB2100;
+    }
+    &--comp{
+      color:#FFF;
+      border:1px solid #078F86;
+      background:#078F86;
+    }
+  }
+  &__textarea{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin-right: 15px;
+    width:30%;
+    &--detail{
+      width:100%;
+    }
+  }
+}
+
+.todo-status{
+  color:#FFF;
+  &--no-yet{
+    background:#8F281D
+  }
+  &--start{
+    background:#DB5A16
+  }
+  &--comp{
+    background:#1D8F48
+  }
+  &__option{
+    color:#333;
+    background:#FFF;
+  }
+}
+
+.react-datepicker{
+  &__input-container{
+    input{
+      border:1px solid #ccc;
+      border-radius: 10px;
+      padding:5px 10px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.todo-add{
+  margin-bottom: 50px;
+  &__data{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex:1;
+  }
+  &__title{
+    margin-right: 10px;
+    width:50%;
+  }
+  &__detail{
+    width:50%;
+  }
+}
+
+.react-datepicker-wrapper{
+  width:auto!important;
+}
+
+.todo-filter{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 20px;
+  &__item{
+    width:10%;
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__button{
+    border:none;
+    color:#FFF;
+    font-weight: bold;
+    width:100%;
+    text-align: center;
+    border-radius: 5px;
+    transition:all ease 0.3s;
+    padding:5px 10px;
+    &--active,
+    &:hover{
+      opacity:0.7
+    }
+    &--all{
+      background:#00315C;
+    }
+    &--no-yet{
+      background:#8F281D
+    }
+    &--start{
+      background:#DB5A16
+    }
+    &--comp{
+      background:#1D8F48
+    }
+  }
+}
+
+.todos-section{
+  &__title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.todos{
+  width:100%;
+  border-collapse: collapse;
+  &__head{
+    background:#00315C;
+    color:#FFF;
+    font-size: 1.2rem;
+    border: solid 1px #00315C;
+  }
+  &__heading{
+    padding:5px 10px;
+  }
+}
+
+.todo{
+  border: 1px solid #ccc;
+  &__title,
+  &__date,
+  &__detail,
+  &__status,
+  &__buttons{
+    padding:5px 10px;
+    border-right: 1px solid #ccc;
+  }
+  &__title{ 
+    align-items:center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right:20px;
+    cursor:pointer;
+    width:30%;
+    transition: all ease 0.3;
+    &:hover{
+      opacity:0.7
+    }
+  }
+  &__date{
+    margin-right: 15px;
+  }
+  &__status{
+
+  }
+}
+
+.svg-inline--fa{
+  margin-right: 5px;
+}
